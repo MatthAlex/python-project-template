@@ -1,0 +1,35 @@
+[build-system]
+requires = ["uv"]
+
+[project]
+name = "python-project-template"
+version = "2024.0.1"
+dependencies = [
+  "pylint",
+  "flake8",
+  "pytest",
+  "coverage",
+  "mypy",
+  "mypy-extensions",
+  "ruff",
+  "pre-commit",
+]
+requires-python = ">=3.10"
+authors = [
+  { name = "Matthew Alexandrakis", email = "m.alexandrakis@qmul.ac.uk" },
+]
+description = "Example Python Project Template"
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+keywords = ["python", "best practices", "linting", "formatting"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+]
+
+[project.urls]
+Homepage = "https://github.qmul.ac.uk/aax010/python-project-template"
+Documentation = "https://github.qmul.ac.uk/aax010/python-project-template"
+Repository = "https://github.qmul.ac.uk/aax010/python-project-template"
+"Bug Tracker" = "https://github.qmul.ac.uk/aax010/python-project-template/issues"
+Changelog = "https://github.qmul.ac.uk/aax010/python-project-template/blob/master/CHANGELOG.md"

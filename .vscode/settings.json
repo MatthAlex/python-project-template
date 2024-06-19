@@ -1,0 +1,68 @@
+{
+    // General settings - can only be used in User "settings.json"
+    // "telemetry.telemetryLevel": "off",
+    // "python.diagnostics.sourceMapsEnabled": true,
+    // "python.venvFolders": [
+    //     "env", "venv", ".env", ".venv"
+    // ],
+    // General settings - can migrate to User "settings.json"
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on",
+    "editor.definitionLinkOpensInPeek": true,
+    "editor.foldingMaximumRegions": 1000,
+    "editor.maxTokenizationLineLength": 1000,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "files.autoSave": "onWindowChange",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    // "hides" files from the Explorer
+    "files.exclude": {
+        ".git/": true,
+        ".vscode/*": false,
+        "**/*env": true,
+        "**/*venv": true,
+        "**/.*_cache*": true,
+        "**/__pycache__": true,
+    },
+    // and doesn't search in them (inherits `files.exclude`)
+    "search.exclude": {},
+    // and exclude them from the File Watcher
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        ".vscode/*": true,
+        "**/*env": true,
+        "**/*venv": true,
+        "**/.*_cache*": true,
+        "**/__pycache__": true,
+    },
+    // Python
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.userFileIndexingLimit": 40,
+    "python.analysis.exclude": [
+        "**/__pycache__",
+        "**/node_modules/",
+        "**/.git/",
+        "**/.*_cache",
+        "**/.vscode/",
+        "**/*env/",
+        "**/*venv/"
+    ],
+    "python.createEnvironment.trigger": "prompt",
+    "python.languageServer": "Pylance",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.testing.pytestEnabled": true,
+    "python.testing.cwd": "${workspaceFolder}/tests",
+    "python.testing.unittestEnabled": true,
+    //pylint
+    "pylint.importStrategy": "fromEnvironment",
+    // mypy
+    "mypy-type-checker.importStrategy": "fromEnvironment",
+    // flake8
+    "flake8.importStrategy": "fromEnvironment",
+    "markdown.extension.toc.levels": "2..2",
+}
